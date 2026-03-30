@@ -2,7 +2,7 @@
 
 A Claude Code plugin that analyzes PydanticAI agent traces from Logfire to find bugs, inefficiencies, and propose improvements.
 
-Read the full story: [README.blog.md](README.blog.md)
+Read the full story: [Blog post](https://kyrylai.com/2026/03/30/self-improving-agent/) | [README.blog.md](README.blog.md)
 
 ## Install
 
