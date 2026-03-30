@@ -1,0 +1,9 @@
+{
+  "name": "self-improving-agent",
+  "description": "Analyze PydanticAI agent traces from Logfire to find bugs, inefficiencies, and propose improvements",
+  "version": "0.1.0",
+  "author": {
+    "name": "KOML"
+  },
+  "repository": "https://github.com/koml/self-improving-agent"
+}

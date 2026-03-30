@@ -1,0 +1,22 @@
+[project]
+name = "self-improving-agent"
+version = "0.1.0"
+description = "Investment portfolio advisor agent with self-improving feedback loop"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.0",
+    "logfire>=4.31.0",
+    "pydantic-ai-slim[anthropic]>=1.73.0",
+    "python-dotenv>=1.2.2",
+]
+
+[project.scripts]
+agent = "agent.core:main"
+agent-eval = "agent.eval:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+agent = ["cases.json"]

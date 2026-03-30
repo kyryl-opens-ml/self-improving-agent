@@ -1,0 +1,72 @@
+[
+  {
+    "description": "DTI exactly at 45% max for Excellent tier — boundary inclusion test",
+    "annual_income": 100000,
+    "total_debt": 45000,
+    "credit_score": 745,
+    "loan_amount": 300000
+  },
+  {
+    "description": "DTI 45.1%, just over Excellent cap — tiny overshoot LLM might round away",
+    "annual_income": 100000,
+    "total_debt": 45100,
+    "credit_score": 750,
+    "loan_amount": 280000
+  },
+  {
+    "description": "Score exactly 740 (Excellent boundary), DTI 42% — tier classification matters",
+    "annual_income": 100000,
+    "total_debt": 42000,
+    "credit_score": 740,
+    "loan_amount": 250000
+  },
+  {
+    "description": "Score 739 (Good tier), same DTI 42% — one point flips outcome vs case 3",
+    "annual_income": 100000,
+    "total_debt": 42000,
+    "credit_score": 739,
+    "loan_amount": 250000
+  },
+  {
+    "description": "High earner ($500k) with terrible credit (520). DTI 5% fine, credit terrible — conflicting signals",
+    "annual_income": 500000,
+    "total_debt": 25000,
+    "credit_score": 520,
+    "loan_amount": 800000
+  },
+  {
+    "description": "Excellent credit (790) but only $28k income. DTI 7% passes, but $150k loan is 5.4x income",
+    "annual_income": 28000,
+    "total_debt": 2000,
+    "credit_score": 790,
+    "loan_amount": 150000
+  },
+  {
+    "description": "Loan 44x income ($2M on $45k) with passing DTI (20%). Tools green, common sense says no",
+    "annual_income": 45000,
+    "total_debt": 9000,
+    "credit_score": 700,
+    "loan_amount": 2000000
+  },
+  {
+    "description": "Perfect profile, zero debt, tiny $5k loan — trivial approve, zero-debt edge",
+    "annual_income": 200000,
+    "total_debt": 0,
+    "credit_score": 800,
+    "loan_amount": 5000
+  },
+  {
+    "description": "Score 579 (one below Fair, Poor tier), zero debt, $300k loan at punitive 12.5% rate",
+    "annual_income": 75000,
+    "total_debt": 0,
+    "credit_score": 579,
+    "loan_amount": 300000
+  },
+  {
+    "description": "Triple borderline: score exactly 670, DTI 39.5% (just under 40% max), loan 6.2x income",
+    "annual_income": 120000,
+    "total_debt": 47400,
+    "credit_score": 670,
+    "loan_amount": 750000
+  }
+]
