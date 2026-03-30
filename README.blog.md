@@ -40,7 +40,6 @@ claude -n "self-improving-agent" "$input" --permission-mode plan --allowedTools 
 
 The output of this planning is here: ./plans/agent-plan.md
 
-// TODO for wp: replace link to actual md
 [agent-plan](./plans/agent-plan.md)
 
 
@@ -66,7 +65,6 @@ input="Generate hard cases to stress-test the agent to the edge, structure as a 
 claude -r "self-improving-agent" "$input" --permission-mode plan
 ```
 
-// TODO for wp: replace link to actual md
 [agent-test](./plans/agent-test.md)
 
 And once again—plan looks good—one-shot it:
@@ -138,7 +136,6 @@ claude "Analyze my Loan Underwriting Agent agent traces from Logfire for last da
 
 Recommendations to improve your agents are here, and they are based on actual data points. 
 
-// TODO for wp: replace link to actual md
 [agent-improvement-v1](./plans/agent-improvement-v1.md)
 
 
