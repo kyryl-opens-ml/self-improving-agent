@@ -1,4 +1,4 @@
-# self-improving-agent# Self-Improving Agent
+# Self-Improving Agent
 
 A Claude Code plugin that analyzes PydanticAI agent traces from Logfire to find bugs, inefficiencies, and propose improvements.
 
