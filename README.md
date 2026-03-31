@@ -6,11 +6,19 @@ Read the full story: [Blog post](https://kyrylai.com/2026/03/30/self-improving-a
 
 ## Install
 
+**1. Add the marketplace and install the plugin:**
+
 ```
-/plugin install github:koml/self-improving-agent
+/plugin marketplace add https://github.com/kyryl-opens-ml/self-improving-agent.git#marketplace
+/plugin install self-improving-agent@koml-self-improving-agent
+/reload-plugins
 ```
 
-Requires the [Logfire MCP server](https://logfire.pydantic.dev/docs/integrations/mcp/) configured in your Claude Code settings.
+**2. Add the [Logfire MCP server](https://logfire.pydantic.dev/docs/integrations/mcp/):**
+
+```
+claude mcp add logfire --transport http https://logfire-us.pydantic.dev/mcp
+```
 
 ## Skill: `/analyze-agent-traces-logfire`
 
@@ -23,6 +31,6 @@ Analyzes your agent's Logfire traces and produces a report with:
 Usage:
 
 ```
-/analyze-agent-traces-logfire 24 hours
-/analyze-agent-traces-logfire 7 days
+/self-improving-agent:analyze-agent-traces-logfire 24 hours
+/self-improving-agent:analyze-agent-traces-logfire 7 days
 ```
